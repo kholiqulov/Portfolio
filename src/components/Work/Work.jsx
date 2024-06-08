@@ -5,6 +5,12 @@ import { TfiGallery } from "react-icons/tfi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 
+// ------> Images
+import Powermate from "../../Assets/Images/powermate.png";
+import VistaWave from "../../Assets/Images/vistavawe.png";
+import Intex from "../../Assets/Images/intex.png";
+import Bito from "../../Assets/Images/bito.png";
+
 // ------> Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,33 +22,67 @@ import "./work.css";
 const data = [
   {
     id: 0,
-    title: "Coming soon",
-    image: "../",
+    title: "VISTAWAVE - IT company in Uzbekistan",
+    text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
+    image: VistaWave,
+    alt: "VistaWave",
+    link: "https://vistawaves.uz/",
+  },
+  {
+    id: 0,
+    title: "Powerful - industial diesel generators",
+    text: "Power Met International are experts in importing and installing generator systems to keep your business running smoothly.",
+    image: Powermate,
+    alt: "Powermate",
+    link: "https://www.generatoruz.com/uz",
   },
   {
     id: 1,
-    title: "Coming soon",
-    image: "../",
+    title: "INTEX - Pools from intex in Tashkent",
+    text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
+    image: Intex,
+    alt: "Intex",
+    link: "https://new-intex.vercel.app/",
   },
   {
     id: 2,
-    title: "Coming soon",
-    image: "../",
+    title: "Bito - Automate your business with us",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
+    image: Bito,
+    alt: "Bito",
+    link: "https://bito-landing-page.vercel.app/",
+  },
+  {
+    id: 0,
+    title: "VISTAWAVE - IT company in Uzbekistan",
+    text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
+    image: VistaWave,
+    alt: "VistaWave",
+    link: "https://vistawaves.uz/",
   },
   {
     id: 3,
-    title: "Coming soon",
-    image: "../",
+    title: "Powerful - industial diesel generators",
+    text: "Power Met International are experts in importing and installing generator systems to keep your business running smoothly.",
+    image: Powermate,
+    alt: "Powermate",
+    link: "https://www.generatoruz.com/uz",
   },
   {
     id: 4,
-    title: "Coming soon",
-    image: "../",
+    title: "INTEX - Pools from intex in Tashkent",
+    text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
+    image: Intex,
+    alt: "Intex",
+    link: "https://new-intex.vercel.app/",
   },
   {
     id: 5,
-    title: "Coming soon",
-    image: "../",
+    title: "Bito - Automate your business with us",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
+    image: Bito,
+    alt: "Bito",
+    link: "https://bito-landing-page.vercel.app/",
   },
 ];
 
@@ -63,19 +103,19 @@ function Work() {
           experience while doing these projects.
         </p>
         <Swiper
-          className="mySwiper mt-12 !block mx-auto border-[2px] "
-          navigation={false}
-          spaceBetween={24}
+          className="mySwiper mt-12"
+          navigation={true}
+          spaceBetween={10}
           autoplay={{
-            delay: 6000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 1.2,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 2.1,
             },
             1024: {
               slidesPerView: 3,
@@ -83,47 +123,46 @@ function Work() {
           }}
           modules={[Navigation, Autoplay]}
         >
-          <div className="!flex !justify-between">
+          <div>
             {data?.map((item) => (
-              <SwiperSlide key={item?.id}>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <a href="https://nodirbekdev.uz">
-                    <img
-                      class="rounded-t-lg"
-                      src="../../Assets/Images/powermate.png"
-                      alt=""
-                    />
-                    <div class="p-5">
-                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions 2021
-                      </h5>
-                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.
-                      </p>
-                      <a
-                        href="https://nodirbekdev.uz"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              <SwiperSlide key={item?.id} className="">
+                <div class="max-w-[280px] sm:max-w-[320px] h-[470px] sm:h-[450px] w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <img
+                    class="rounded-t-lg w-full h-[170px] cursor-pointer object-cover"
+                    src={item?.image}
+                    alt={item?.alt}
+                  />
+                  <div class="p-5">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {item?.title}
+                    </h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      {item?.text}
+                    </p>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={item?.link}
+                      class="inline-flex items-center space-x-2 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    >
+                      <span className="block">See project</span>
+                      <svg
+                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
                       >
-                        Read more
-                        <svg
-                          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 14 10"
-                        >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </a>
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
