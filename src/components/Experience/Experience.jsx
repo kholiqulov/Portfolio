@@ -15,6 +15,7 @@ function Experience() {
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(true);
   const [active4, setActive4] = useState(false);
+  const [active5, setActive5] = useState(false);
 
   // ------> Context
   const ctx = useContext(Context);
@@ -33,6 +34,7 @@ function Experience() {
     setActive2(false);
     setActive3(false);
     setActive4(false);
+    setActive5(false);
   };
   const handleClick2 = () => {
     setActive(false);
@@ -40,6 +42,7 @@ function Experience() {
     setActive2(true);
     setActive3(false);
     setActive4(false);
+    setActive5(false);
   };
   const handleClick3 = () => {
     setActive(false);
@@ -47,6 +50,7 @@ function Experience() {
     setActive2(false);
     setActive3(true);
     setActive4(false);
+    setActive5(false);
   };
   const handleClick4 = () => {
     setActive(false);
@@ -54,23 +58,16 @@ function Experience() {
     setActive2(false);
     setActive3(false);
     setActive4(true);
+    setActive5(false);
   };
-
-  // const handleSubmit = (evt) => {
-  //   evt.preventDefault();
-
-  //   const token = "5850891292:AAEloOzyUHZkmtt6lytPkuOlsiVVH2l_Z6k";
-  //   const chatId = 5022460942;
-
-  //   const name = evt.target.elements.name.value;
-  //   const lastName = evt.target.elements.lastname.value;
-  //   let fullText = `\u{2705} Name: ${name}%0A\u{2705} Name: ${lastName}%0A\u{260F} Phone Number: \u{FF0B}998${"970130322"}`;
-
-  //   // --- Sent Telegram Bot
-  //   axios.post(
-  //     `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${fullText},`
-  //   );
-  // };
+  const handleClick5 = () => {
+    setActive(false);
+    setActive1(false);
+    setActive2(false);
+    setActive3(false);
+    setActive4(false);
+    setActive5(true);
+  };
 
   return (
     <section id="experience" className="pt-[80px] sm:pt-[120px]">
@@ -87,6 +84,16 @@ function Experience() {
           <div className="mt-8 sm:mt-12">
             <div className="flex flex-col sm:flex-row items-start">
               <div className="w-[70%] sm:w-[25%]">
+                <button
+                  className={`${
+                    active5 ? "text-[#64ffda] active bg-[#112240]" : ""
+                  } ${
+                    show ? "!-z-10" : "z-0"
+                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
+                  onClick={handleClick5}
+                >
+                  VistaWave
+                </button>
                 <button
                   className={`${
                     active3 ? "text-[#64ffda] active bg-[#112240]" : ""
@@ -154,25 +161,43 @@ function Experience() {
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          I worked with lots of project which was for well-known
-                          companies in Uzbekistan such as JETOUR. While working
-                          with team, I gained very valuable skills that help me
-                          to built gid project.
+                          High-Profile Projects: I worked on several
+                          high-profile projects for notable clients, such as
+                          JETOUR. These projects required a high level of
+                          precision and attention to detail, enhancing my
+                          ability to deliver top-quality work under pressure.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          while coding, I gave attention every code I wrote to
-                          be accurate and not make problem. This progress was
-                          the one of the factor that was thr way to succeed.
+                          Code Accuracy and Problem Avoidance: I paid meticulous
+                          attention to the accuracy of my code, ensuring it was
+                          bug-free and efficient. This focus on precision was a
+                          key factor in the success of our projects, as it
+                          minimized issues and streamlined the development
+                          process.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          I learned how to work effectively with a team on
-                          Github as well.
+                          Version Control and Collaboration on GitHub: I learned
+                          how to work effectively with a team using GitHub. This
+                          included managing branches, conducting code reviews,
+                          and ensuring smooth integration of code changes. These
+                          skills are crucial for collaborative development and
+                          maintaining project integrity.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          Customer-Centric Development: Working with
+                          high-profile clients required a deep understanding of
+                          their needs and expectations. I learned to develop
+                          user-friendly solutions that met client requirements
+                          and provided an optimal user experience.
                         </span>
                       </li>
                     </ul>
@@ -229,33 +254,43 @@ function Experience() {
                   <>
                     <h2 className="text-xl text-[#64ffda] font-medium">
                       <span className="inline-block text-white">
-                        Front End Mentor at
+                        Front End Developer and Robotics Engineer at
                       </span>{" "}
                       RoboticsLab
                     </h2>
                     <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      July - August 2022
+                      July 2022 - Present 
                     </strong>
                     <ul className="space-y-3 mt-6">
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          I understood how to communicate with students, even if
-                          only a little.
+                          During my time at Robotics Lab, I had the unique
+                          opportunity to work in the Robotics Lab, where I
+                          expanded my skill set and discovered a passion for
+                          robotics. This role provided me with diverse learning
+                          experiences and professional growth.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          In 1 month, I and the students found answers to such
-                          questions as what is the web industry itself,
+                          Exploring Frontend Libraries and Robotics: In the
+                          Robotics Lab, I delved into various frontend
+                          development libraries, broadening my technical
+                          knowledge. This experience also sparked my passion for
+                          robotics, leading me to learn C, C++, Python, and ROS
+                          alongside my frontend development duties.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Why we need to learn programming, and we started
-                          programming basic,
+                          Version Control and Collaboration on GitHub: I learned
+                          how to work effectively with a team using GitHub. This
+                          included managing branches, conducting code reviews,
+                          and ensuring smooth integration of code changes, which
+                          are crucial for collaborative development.
                         </span>
                       </li>
                     </ul>
@@ -275,17 +310,6 @@ function Experience() {
                       April 2023 - Present
                     </strong>
                     <ul className="space-y-3 mt-6">
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          We are alse working on one project which is for
-                          Education systems. The initiation of a new IT project
-                          focusing on managing students at school. This system
-                          will involve scoring in classes and monitoring
-                          attendance. We believe this innovation could bring a
-                          positive change to the school environment.
-                        </span>
-                      </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
@@ -329,15 +353,105 @@ function Experience() {
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          One project which was convenient to sell Generator was
-                          done.
+                          Remote Team Collaboration: Working with a team from a
+                          distance was a key aspect of this role, allowing me to
+                          develop and refine my remote collaboration skills.
+                          This experience taught me how to effectively
+                          communicate, coordinate tasks, and maintain
+                          productivity despite physical distance.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
                         <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Working with a team from a distance was the main
-                          advantage for my IT skills.
+                          Project Development: The generator sales project
+                          required a comprehensive understanding of customer
+                          needs and technical requirements. I gained valuable
+                          experience in designing and implementing a seamless
+                          user interface that enhanced the buying experience.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          Time Management and Responsibility: Being part of a
+                          project with significant impact required me to manage
+                          my time effectively and take full responsibility for
+                          my tasks. This experience reinforced the importance of
+                          accountability and meeting project deadlines.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          Customer-Centric Design: The project emphasized the
+                          importance of creating user-friendly solutions. I
+                          learned how to gather and incorporate user feedback,
+                          ensuring the final product met customer expectations
+                          and provided an optimal user experience.
+                        </span>
+                      </li>
+                    </ul>
+                  </>
+                ) : (
+                  ""
+                )}
+                {active5 ? (
+                  <>
+                    <h2 className="text-xl text-[#64ffda] font-medium">
+                      <span className="inline-block text-white">
+                        Co-Founder of
+                      </span>{" "}
+                      VistaWave
+                    </h2>
+                    <strong className="inline-block font-normal text-sm text-white tracking-wide">
+                      Yanuary 2024 - Present
+                    </strong>
+                    <ul className="space-y-3 mt-6">
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          At VistaWave, we excel in delivering top-notch IT
+                          services and consulting solutions tailored for large
+                          enterprises. Our goal is to help businesses establish
+                          a strong and effective online presence. Our
+                          specialized services include:
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          🌐 Web Development: We build dynamic, responsive
+                          websites designed to engage users and drive business
+                          growth.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          📱 Mobile Development: Our team creates powerful
+                          Android applications that meet your specific business
+                          needs.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          🖥️ WordPress Solutions: We provide end-to-end
+                          WordPress development, ensuring your site is robust,
+                          secure, and user-friendly.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
+                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
+                          🎨 UX/UI Design: Our expert designers develop
+                          intuitive and attractive user interfaces and
+                          experiences that enhance user satisfaction. At
+                          VistaWave, we are committed to innovation and
+                          excellence, ensuring that our IT solutions are of the
+                          highest quality, scalable, and tailored to your unique
+                          business objectives.
                         </span>
                       </li>
                     </ul>

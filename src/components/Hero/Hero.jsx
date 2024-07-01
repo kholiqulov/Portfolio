@@ -50,11 +50,16 @@ function Hero() {
             Frontend developer
           </strong>
           <p className="text-gray-300 text-base">
-            Front End Developer with more than a year of experience working with
-            JavaScript, React Js, Next Js to deliver customer a great product. I
-            know how to work on Github with a team and being responsible for
-            every duties. Furthermore, I'm looking forwart to setting up my own
-            company with many employees.
+            As a passionate and skilled Front End Developer, I bring over a year
+            of experience in leveraging JavaScript, React.js, and Next.js to
+            create exceptional products for customers. My expertise includes
+            working collaboratively on GitHub, ensuring seamless team
+            integration and responsibility for all my duties. In addition
+            to my development work, I am the co-founder of CodeBridge School and
+            VistaWave, where I have demonstrated my leadership and innovative
+            capabilities. Looking ahead, I am excited about the prospect of
+            establishing my own company and expanding it with a dedicated team
+            of employees.
           </p>
           <a
             href="tel:+998970130322"

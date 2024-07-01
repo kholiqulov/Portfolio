@@ -72,7 +72,7 @@ function Header() {
                   href="#contact"
                   className="nav_link text-white group-hover:text-[#64ffda] duration-150"
                 >
-                  Contactme
+                  Contact
                 </a>
               </li>
             </ul>
@@ -224,7 +224,7 @@ function Header() {
               <span className="block text-lg mb-[2px] sm:mr-2">
                 <TbBrandTelegram />
               </span>
-              Contactme
+              Contact
             </a>
           </li>
           <a
