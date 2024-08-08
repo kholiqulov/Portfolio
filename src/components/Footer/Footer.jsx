@@ -57,7 +57,7 @@ function Footer() {
                     href="/"
                     className="hover:underline"
                   >
-                    Edu Tizim (for school)
+                    VistaWave
                   </a>
                 </li>
               </ul>

@@ -2,7 +2,7 @@ import React from "react";
 import { BsTelephoneOutbound } from "react-icons/bs";
 
 // ------> Images
-import Me from "../../Assets/Images/dev.png";
+import Me from "../../Assets/Images/nodir.JPG";
 
 // ------> Css
 import "./hero.css";
@@ -68,13 +68,13 @@ function Hero() {
             Contact Me <BsTelephoneOutbound className="ml-2 text-[#64ffda]" />
           </a>
         </div>
-        <div className="relative sm:ml-5 mt-14 lg:mt-0 ">
+        <div className="relative sm:ml-5 mt-14 lg:mt-0">
           <img
-            className="max-w-[300px] sm:max-w-[400px] w-full h-[300px] sm:h-[400px] rounded-b-[50px] sm:rounded-b-[100px] z-50"
+            className="max-w-[300px] sm:max-w-[420px] w-full h-[300px] sm:h-[420px] z-50 rounded-tl-[100px] sm:rounded-tl-[150px] rounded-br-[100px] sm:rounded-br-[150px] rounded-tr-[20px]"
             src={Me}
             alt="front-img"
           />
-          <span className="absolute w-[320px] sm:w-[440px] h-[320px] sm:h-[440px] rounded-full bg-[#114b50] blur-2xl sm:blur-3xl -right-[10px] sm:-right-[20px] top-[20px] -z-10"></span>
+          <span className="absolute w-[320px] sm:w-[440px] h-[320px] sm:h-[440px] rounded-full bg-[#114b50] blur-2xl sm:blur-3xl -right-[10px] sm:-right-[0px] top-[0px] -z-10"></span>
         </div>
       </div>
     </section>
