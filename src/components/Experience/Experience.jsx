@@ -83,11 +83,7 @@ function Experience() {
         <div className="max-w-[800px] mx-auto">
           <div className="mt-8 sm:mt-12">
             <div className="flex flex-col sm:flex-row items-start">
-              <div
-                data-aos="fade-right"
-                data-aos-duration="600"
-                className="w-[70%] sm:w-[25%]"
-              >
+              <div className="w-[70%] sm:w-[25%]">
                 <button
                   className={`${
                     active5 ? "text-[#64ffda] active bg-[#112240]" : ""
@@ -149,11 +145,7 @@ function Experience() {
                   RoboticsLab
                 </button>
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="600"
-                className="w-[100%] sm:w-[75%] sm:ml-10 mt-8 sm:mt-0"
-              >
+              <div className="w-[100%] sm:w-[75%] sm:ml-10 mt-8 sm:mt-0">
                 {active ? (
                   <>
                     <h2 className="text-xl text-[#64ffda] font-medium">

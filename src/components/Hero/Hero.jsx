@@ -17,12 +17,8 @@ function Hero() {
   return (
     <section id="home" className="mt-12 sm:mt-[70px] pt-[100px] sm:pt-[130px]">
       <div className="container flex flex-wrap justify-center lg:flex lg:items-center lg:justify-between">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="600"
-          className="max-w-[500px] text-center lg:text-start"
-        >
-          <div className="flex">
+        <div className="max-w-[500px] text-center lg:text-start">
+          <div data-aos="fade-up" data-aos-duration="600" className="flex">
             <h2 className="flex mx-auto lg:mx-0 items-end font-semibold text-4xl sm:text-5xl text-white tracking-normal">
               Hi, I'm
               <ul id="enthusiasm" className="list flex items-center m-0 p-0">
@@ -56,10 +52,20 @@ function Hero() {
               </ul>
             </h2>
           </div>
-          <strong className="inline-block dev font-normal text-base sm:text-2xl mt-3 mb-3 sm:mt-2 sm:mb-3 text-gray-300 -z-20">
+          <strong
+            data-aos="fade-left"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            className="inline-block dev font-normal text-base sm:text-2xl mt-3 mb-3 sm:mt-2 sm:mb-3 text-gray-300 -z-20"
+          >
             Frontend developer
           </strong>
-          <p className="text-gray-300 text-base">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            className="text-gray-300 text-base"
+          >
             As a passionate and skilled Front End Developer, I bring over a year
             of experience in leveraging JavaScript, React.js, and Next.js to
             create exceptional products for customers. My expertise includes
@@ -73,14 +79,18 @@ function Hero() {
           </p>
           <a
             href="tel:+998970130322"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="150"
             className="flex items-center mx-auto lg:mx-0 w-fit text-sm border border-[#64ffda] text-[#64ffda] rounded-[4px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-4 duration-200 mt-6 group"
           >
             Contact Me <BsTelephoneOutbound className="ml-2 text-[#64ffda]" />
           </a>
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="600"
+          data-aos-delay="250"
           className="relative sm:ml-5 mt-14 lg:mt-0"
         >
           <img
