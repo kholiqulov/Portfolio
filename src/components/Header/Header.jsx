@@ -27,7 +27,7 @@ function Header() {
       className={`bg-[#0a192f] fixed top-0 z-50 w-full h-fit duration-500 border-b border-b-[rgba(100,255,218,0.1)] shadow-header_shadow`}
     >
       <div className="container">
-        <nav className="flex items-center justify-between py-3 sm:py-4">
+        <nav className="flex items-center justify-between py-4 sm:py-5">
           <img
             className="h-[40px] w-[40px] rounded-full z-50"
             src={Me}

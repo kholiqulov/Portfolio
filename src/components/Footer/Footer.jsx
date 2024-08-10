@@ -29,13 +29,13 @@ function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-2">
                 <li data-aos="fade-up" data-aos-duration="600">
-                  <p className="text-gray-500">Math</p>
+                  <p>Math</p>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-                  <p className="text-gray-500">Physics</p>
+                  <p>Physics</p>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                  <p className="text-gray-500">English</p>
+                  <p>English</p>
                 </li>
               </ul>
             </div>
