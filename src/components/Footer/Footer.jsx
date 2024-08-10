@@ -14,7 +14,11 @@ function Footer() {
     <footer className="mt-[80px] sm:mt-[120px]">
       <div className="container mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="md:flex md:justify-between">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="600"
+          className="md:flex md:justify-between"
+        >
           <div className="mb-6 md:mb-0">
             <img
               className="h-[40px] w-[40px] rounded-full z-50"
@@ -43,21 +47,35 @@ function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
                 Passion projects
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
+              <ul className="text-gray-500 dark:text-gray-400 space-y-2">
+                <li>
                   <a
-                    href="https://t.me/Codebridgeschool"
-                    className="hover:underline "
+                    href="https://www.linkedin.com/company/codebridge-schooll"
+                    className="hover:underline"
+                    rel="noreferrer"
+                    target="_blank"
                   >
                     CodeBridge School
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.vistawaves.uz/"
                     className="hover:underline"
+                    rel="noreferrer"
+                    target="_blank"
                   >
                     VistaWave
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://iapply.org/"
+                    className="hover:underline"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    IApply
                   </a>
                 </li>
               </ul>
@@ -66,8 +84,8 @@ function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
                 Legal
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
+              <ul className="text-gray-500 dark:text-gray-400 space-y-2">
+                <li>
                   <a href="/" className="hover:underline">
                     Privacy Policy
                   </a>
@@ -82,7 +100,12 @@ function Footer() {
           </div>
         </div>
         {/* <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 " /> */}
-        <div className="sm:flex sm:items-center sm:justify-between sm:flex-row-reverse mt-10 md:mt-6">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="600"
+          className="sm:flex sm:items-center sm:justify-between sm:flex-row-reverse mt-10 md:mt-6"
+        >
           <ul className="flex items-center space-x-4 ">
             <li>
               <a
@@ -124,7 +147,8 @@ function Footer() {
               >
                 <FaGithub className="text-white w-7 h-7" rel="noreferrer" />
               </a>
-            </li><li>
+            </li>
+            <li>
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -133,10 +157,9 @@ function Footer() {
                 <FiGitlab className="text-white w-7 h-7" rel="noreferrer" />
               </a>
             </li>
-
           </ul>
           <span className="inline-block text-sm text-gray-500 dark:text-gray-400 my-5">
-            © 2023 . All Rights Reserved.
+            © 2022 . All Rights Reserved.
           </span>
         </div>
       </div>

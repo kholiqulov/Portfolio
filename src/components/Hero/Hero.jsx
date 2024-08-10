@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsTelephoneOutbound } from "react-icons/bs";
+import AOS from "aos";
 
 // ------> Images
-import Me from "../../Assets/Images/nodir.JPG";
+import Me from "../../Assets/Images/dev.png";
 
 // ------> Css
 import "./hero.css";
 
 function Hero() {
+  // ------> Use aos animation library
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="home" className="mt-12 sm:mt-[70px] pt-[100px] sm:pt-[130px]">
       <div className="container flex flex-wrap justify-center lg:flex lg:items-center lg:justify-between">
-        <div className="max-w-[500px] text-center lg:text-start">
-          <div className="flex ">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="600"
+          className="max-w-[500px] text-center lg:text-start"
+        >
+          <div className="flex">
             <h2 className="flex mx-auto lg:mx-0 items-end font-semibold text-4xl sm:text-5xl text-white tracking-normal">
               Hi, I'm
               <ul id="enthusiasm" className="list flex items-center m-0 p-0">
@@ -54,8 +64,8 @@ function Hero() {
             of experience in leveraging JavaScript, React.js, and Next.js to
             create exceptional products for customers. My expertise includes
             working collaboratively on GitHub, ensuring seamless team
-            integration and responsibility for all my duties. In addition
-            to my development work, I am the co-founder of CodeBridge School and
+            integration and responsibility for all my duties. In addition to my
+            development work, I am the co-founder of CodeBridge School and
             VistaWave, where I have demonstrated my leadership and innovative
             capabilities. Looking ahead, I am excited about the prospect of
             establishing my own company and expanding it with a dedicated team
@@ -68,7 +78,11 @@ function Hero() {
             Contact Me <BsTelephoneOutbound className="ml-2 text-[#64ffda]" />
           </a>
         </div>
-        <div className="relative sm:ml-5 mt-14 lg:mt-0">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="600"
+          className="relative sm:ml-5 mt-14 lg:mt-0"
+        >
           <img
             className="max-w-[300px] sm:max-w-[420px] w-full h-[300px] sm:h-[420px] z-50 rounded-tl-[100px] sm:rounded-tl-[150px] rounded-br-[100px] sm:rounded-br-[150px] rounded-tr-[20px]"
             src={Me}

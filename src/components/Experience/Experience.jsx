@@ -13,9 +13,9 @@ function Experience() {
   const [active, setActive] = useState(false);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
-  const [active3, setActive3] = useState(true);
+  const [active3, setActive3] = useState(false);
   const [active4, setActive4] = useState(false);
-  const [active5, setActive5] = useState(false);
+  const [active5, setActive5] = useState(true);
 
   // ------> Context
   const ctx = useContext(Context);
@@ -83,7 +83,11 @@ function Experience() {
         <div className="max-w-[800px] mx-auto">
           <div className="mt-8 sm:mt-12">
             <div className="flex flex-col sm:flex-row items-start">
-              <div className="w-[70%] sm:w-[25%]">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="600"
+                className="w-[70%] sm:w-[25%]"
+              >
                 <button
                   className={`${
                     active5 ? "text-[#64ffda] active bg-[#112240]" : ""
@@ -145,7 +149,11 @@ function Experience() {
                   RoboticsLab
                 </button>
               </div>
-              <div className="w-[100%] sm:w-[75%] sm:ml-10 mt-8 sm:mt-0">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="600"
+                className="w-[100%] sm:w-[75%] sm:ml-10 mt-8 sm:mt-0"
+              >
                 {active ? (
                   <>
                     <h2 className="text-xl text-[#64ffda] font-medium">
@@ -259,7 +267,7 @@ function Experience() {
                       RoboticsLab
                     </h2>
                     <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      July 2022 - Present 
+                      July 2022 - Present
                     </strong>
                     <ul className="space-y-3 mt-6">
                       <li className="flex items-start">

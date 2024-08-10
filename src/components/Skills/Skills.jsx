@@ -23,7 +23,7 @@ function Skills() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-4 md:gap-6 mt-10">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 HTML
@@ -36,7 +36,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[100%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 Css
@@ -49,7 +49,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[92%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 JavaScript (ES6+)
@@ -62,7 +62,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[82%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 React Js
@@ -75,7 +75,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[80%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 Next Js
@@ -88,7 +88,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[85%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 Scss
@@ -101,7 +101,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[90%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 Tailwind Css
@@ -114,7 +114,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[90%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 MUI (Material UI)
@@ -127,7 +127,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[35%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 TypeScript
@@ -140,7 +140,7 @@ function Skills() {
               <div className="bg-[#64ffda] h-2 rounded-full w-[70%]"></div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
               <span className="text-base font-medium text-gray-500 dark:text-white">
                 Bootstrap

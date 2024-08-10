@@ -41,14 +41,23 @@ function Contact() {
           </span>
           <span className="inline-block w-14 sm:w-40 h-[1px] bg-[rgba(100,255,218,0.1)] rounded-full ml-5"></span>
         </h2>
-        <div className="mt-8 sm:mt-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          className="mt-8 sm:mt-12"
+        >
           <p className="text-gray-300 text-base text-center max-w-[600px] w-full mx-auto">
             You will be able to contact with me after filling up this form with
             details given below and it's the best way you can receive quick
             response!
           </p>
         </div>
-        <div className="flex items-center justify-center mt-8 sm:mt-12">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="600"
+          className="flex items-center justify-center mt-8 sm:mt-12"
+        >
           <div className="w-full max-w-[340px] sm:max-w-[450px]">
             <form
               onSubmit={onSubmit}

@@ -7,9 +7,10 @@ import { Navigation, Autoplay } from "swiper";
 
 // ------> Images
 import Powermate from "../../Assets/Images/powermate.png";
-import VistaWave from "../../Assets/Images/vistavawe.png";
+import VistaWave from "../../Assets/Images/vistawave.png";
 import Intex from "../../Assets/Images/intex.png";
 import Bito from "../../Assets/Images/bito.png";
+import IApply from "../../Assets/Images/IApply.png";
 
 // ------> Import Swiper styles
 import "swiper/css";
@@ -29,47 +30,15 @@ const data = [
     link: "https://vistawaves.uz/",
   },
   {
-    id: 0,
+    id: 1,
     title: "Powerful - industial diesel generators",
     text: "Power Met International are experts in importing and installing generator systems to keep your business running smoothly.",
     image: Powermate,
     alt: "Powermate",
     link: "https://www.generatoruz.com/uz",
-  },
-  {
-    id: 1,
-    title: "INTEX - Pools from intex in Tashkent",
-    text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
-    image: Intex,
-    alt: "Intex",
-    link: "https://new-intex.vercel.app/",
   },
   {
     id: 2,
-    title: "Bito - Automate your business with us",
-    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
-    image: Bito,
-    alt: "Bito",
-    link: "https://bito-landing-page.vercel.app/",
-  },
-  {
-    id: 0,
-    title: "VISTAWAVE - IT company in Uzbekistan",
-    text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
-    image: VistaWave,
-    alt: "VistaWave",
-    link: "https://vistawaves.uz/",
-  },
-  {
-    id: 3,
-    title: "Powerful - industial diesel generators",
-    text: "Power Met International are experts in importing and installing generator systems to keep your business running smoothly.",
-    image: Powermate,
-    alt: "Powermate",
-    link: "https://www.generatoruz.com/uz",
-  },
-  {
-    id: 4,
     title: "INTEX - Pools from intex in Tashkent",
     text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
     image: Intex,
@@ -77,12 +46,20 @@ const data = [
     link: "https://new-intex.vercel.app/",
   },
   {
-    id: 5,
+    id: 3,
     title: "Bito - Automate your business with us",
     text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
     image: Bito,
     alt: "Bito",
     link: "https://bito-landing-page.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "IApply - Your gateway to studying abroad",
+    text: "Get free consultation about studying abroad ... Our dedicated team at iApply.org is here to offer personalized advice, guiding you towards your ideal university.",
+    image: IApply,
+    alt: "IApply",
+    link: "https://iapply.org/",
   },
 ];
 
@@ -98,12 +75,19 @@ function Work() {
           </span>
           <span className="inline-block w-14 sm:w-40 h-[1px] bg-[rgba(100,255,218,0.1)] rounded-full ml-5"></span>
         </h2>
-        <p className="text-gray-300 text-center max-w-[600px] w-full mx-auto mt-8 sm:mt-12">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="600"
+          className="text-gray-300 text-center max-w-[600px] w-full mx-auto mt-8 sm:mt-12"
+        >
           Here's a list of some projects I have done. I gained a lot of
           experience while doing these projects.
         </p>
         <Swiper
           className="mySwiper mt-12"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="600"
           navigation={true}
           spaceBetween={10}
           autoplay={{
