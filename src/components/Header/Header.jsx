@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { Context } from "../../Context/ModalContext";
 
 // ------> Pdf
-import Resume from "../../Assets/pdf/resume.pdf";
+// import Resume from "../../Assets/pdf/resume.pdf";
 
 import Me from "../../Assets/Images/me.png";
 
@@ -89,7 +89,7 @@ function Header() {
           </div>
           <div className="flex md:hidden items-center space-x-10">
             <a
-              href={Resume}
+              href="/"
               download="Nodirbek's resume.pdf"
               className="flex items-center text-sm ml-5 border border-[#64ffda] text-[#64ffda] rounded-[6px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-3 duration-200"
             >
