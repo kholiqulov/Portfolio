@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { Context } from "../../Context/ModalContext";
 
 // ------> Pdf
-// import Resume from "../../Assets/pdf/resume.pdf";
+import Resume from "../../Assets/pdf/resume.pdf";
 
 import Me from "../../Assets/Images/me.png";
 
@@ -24,12 +24,12 @@ function Header() {
 
   return (
     <header
-      className={`bg-[#0a192f] fixed top-0 z-50 w-full h-fit duration-500 border-b border-b-[rgba(100,255,218,0.1)] shadow-header_shadow`}
+      className={`bg-[#800020] fixed top-0 z-50 w-full h-fit duration-500 border-b border-b-[rgba(100,255,218,0.1)] shadow-header_shadow`}
     >
       <div className="container">
         <nav className="flex items-center justify-between py-4 sm:py-5">
           <img
-            className="h-[40px] w-[40px] rounded-full z-50"
+            className="h-[40px] w-[55px] z-50"
             src={Me}
             alt="front-img"
           />
@@ -38,7 +38,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#home"
-                  className="nav_link text-white group-hover:text-[#64ffda] duration-150"
+                  className="nav_link text-white group-hover:text-white duration-150"
                 >
                   About
                 </a>
@@ -46,7 +46,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#skills"
-                  className="nav_link text-white group-hover:text-[#64ffda] duration-150"
+                  className="nav_link text-white group-hover:text-white duration-150"
                 >
                   Skills
                 </a>
@@ -54,7 +54,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#experience"
-                  className="nav_link text-white group-hover:text-[#64ffda] duration-150"
+                  className="nav_link text-white group-hover:text-white duration-150"
                 >
                   Experience
                 </a>
@@ -62,7 +62,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#work"
-                  className="nav_link text-white group-hover:text-[#64ffda] duration-150"
+                  className="nav_link text-white group-hover:text-white duration-150"
                 >
                   Portfolio
                 </a>
@@ -70,7 +70,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#contact"
-                  className="nav_link text-white group-hover:text-[#64ffda] duration-150"
+                  className="nav_link text-white group-hover:text-white duration-150"
                 >
                   Contact
                 </a>
@@ -79,7 +79,7 @@ function Header() {
             <a
               href={Resume}
               download="Nodirbek's resume.pdf"
-              className="flex items-center text-sm ml-5 border border-[#64ffda] text-[#64ffda] rounded-[6px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-3 duration-200"
+              className="flex items-center text-sm ml-5 border border-white text-white rounded-[6px] hover:bg-[rgb(104,25,25)] py-2 px-3 duration-200"
             >
               Resume
               <span className="inline-block ml-2">
@@ -91,7 +91,7 @@ function Header() {
             <a
               href="/"
               download="Nodirbek's resume.pdf"
-              className="flex items-center text-sm ml-5 border border-[#64ffda] text-[#64ffda] rounded-[6px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-3 duration-200"
+              className="flex items-center text-sm ml-5 border border-white text-white rounded-[6px] hover:bg-[rgb(104,25,25)] py-2 px-3 duration-200"
             >
               Resume
               <span className="inline-block ml-2">
@@ -139,7 +139,7 @@ function Header() {
             setShowModal(false);
             setShow(false);
           }}
-          className="absolute left-[40%] inline-block w-20 h-2 bg-[#0a192f] rounded-b-2xl"
+          className="absolute left-[40%] inline-block w-20 h-2 bg-[#800020] rounded-b-2xl"
         ></span>
         <ul className="grid grid-cols-3 gap-y-8 gap-x-4 pt-14 pb-10">
           <li
@@ -147,11 +147,11 @@ function Header() {
               setShowModal(false);
               setShow(false);
             }}
-            className="border border-[#0a192f] hover:bg-[#0a192f] rounded-md w-full mx-auto duration-300"
+            className="border border-[#800020] hover:bg-[#800020] rounded-md w-full mx-auto duration-300"
           >
             <a
               href="#home"
-              className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
+              className="flex flex-col items-center justify-center font-medium text-sm text-[#800020] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
                 <BiUser />
@@ -164,11 +164,11 @@ function Header() {
               setShowModal(false);
               setShow(false);
             }}
-            className="border border-[#0a192f] hover:bg-[#0a192f] rounded-md w-full mx-auto duration-300"
+            className="border border-[#800020] hover:bg-[#800020] rounded-md w-full mx-auto duration-300"
           >
             <a
               href="#skills"
-              className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
+              className="flex flex-col items-center justify-center font-medium text-sm text-[#800020] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
                 <GiSkills />
@@ -181,11 +181,11 @@ function Header() {
               setShowModal(false);
               setShow(false);
             }}
-            className="border border-[#0a192f] hover:bg-[#0a192f] rounded-md w-full mx-auto duration-300"
+            className="border border-[#800020] hover:bg-[#800020] rounded-md w-full mx-auto duration-300"
           >
             <a
               href="#experience"
-              className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
+              className="flex flex-col items-center justify-center font-medium text-sm text-[#800020] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
                 <MdWorkOutline />
@@ -198,11 +198,11 @@ function Header() {
               setShowModal(false);
               setShow(false);
             }}
-            className="border border-[#0a192f] hover:bg-[#0a192f] rounded-md w-full mx-auto duration-300"
+            className="border border-[#800020] hover:bg-[#800020] rounded-md w-full mx-auto duration-300"
           >
             <a
               href="#work"
-              className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
+              className="flex flex-col items-center justify-center font-medium text-sm text-[#800020] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
                 <TfiGallery />
@@ -215,11 +215,11 @@ function Header() {
               setShowModal(false);
               setShow(false);
             }}
-            className="border border-[#0a192f] hover:bg-[#0a192f] rounded-md w-full mx-auto duration-300"
+            className="border border-[#800020] hover:bg-[#800020] rounded-md w-full mx-auto duration-300"
           >
             <a
               href="#contact"
-              className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
+              className="flex flex-col items-center justify-center font-medium text-sm text-[#800020] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
                 <TbBrandTelegram />
@@ -230,7 +230,7 @@ function Header() {
           <a
             href={Resume}
             download="Nodirbek's resume.pdf"
-            className="flex flex-col-reverse items-center justify-center text-sm w-full border border-[#0a192f] text-[#0a192f] hover:text-white rounded-[6px] bg-white hover:bg-[#0a192f] py-2 px-3 mx-auto duration-300"
+            className="flex flex-col-reverse items-center justify-center text-sm w-full border border-[#800020] text-[#800020] hover:text-white rounded-[6px] bg-white hover:bg-[#800020] py-2 px-3 mx-auto duration-300"
           >
             Resume
             <span className="inline-block">

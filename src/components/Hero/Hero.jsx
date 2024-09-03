@@ -3,7 +3,7 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 import AOS from "aos";
 
 // ------> Images
-import Me from "../../Assets/Images/dev.png";
+import Space from "../../Assets/Images/spaceman.png";
 
 // ------> Css
 import "./hero.css";
@@ -17,34 +17,31 @@ function Hero() {
   return (
     <section id="home" className="mt-12 sm:mt-[70px] pt-[100px] sm:pt-[130px]">
       <div className="container flex flex-wrap justify-center lg:flex lg:items-center lg:justify-between">
-        <div className="max-w-[500px] text-center lg:text-start">
+        <div className="max-w-[500px] text-center lg:text-start space-y-5">
           <div data-aos="fade-up" data-aos-duration="600" className="flex">
             <h2 className="flex mx-auto lg:mx-0 items-end font-semibold text-4xl sm:text-5xl text-white tracking-normal">
-              Hi, I'm
+              Hey, I'm
               <ul id="enthusiasm" className="list flex items-center m-0 p-0">
                 <li id="N" className="item">
-                  N
+                  S
                 </li>
                 <li id="O" className="item">
-                  o
+                  h
                 </li>
                 <li id="D" className="item">
-                  d
+                  a
                 </li>
                 <li id="I" className="item">
-                  i
+                  v
                 </li>
                 <li id="R" className="item">
-                  r
+                  k
                 </li>
                 <li id="B" className="item">
-                  b
+                  a
                 </li>
                 <li id="E" className="item">
-                  e
-                </li>
-                <li id="K" className="item">
-                  k
+                  t
                 </li>
                 <li id="DOT" className="item">
                   .
@@ -52,39 +49,26 @@ function Hero() {
               </ul>
             </h2>
           </div>
-          <strong
-            data-aos="fade-left"
-            data-aos-duration="600"
-            data-aos-delay="100"
-            className="inline-block dev font-normal text-base sm:text-2xl mt-3 mb-3 sm:mt-2 sm:mb-3 text-gray-300 -z-20"
-          >
-            Frontend developer
-          </strong>
           <p
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="100"
-            className="text-gray-300 text-base"
+            className="text-white text-base"
           >
-            As a passionate and skilled Front End Developer, I bring over a year
-            of experience in leveraging JavaScript, React.js, and Next.js to
-            create exceptional products for customers. My expertise includes
-            working collaboratively on GitHub, ensuring seamless team
-            integration and responsibility for all my duties. In addition to my
-            development work, I am the co-founder of CodeBridge School and
-            VistaWave, where I have demonstrated my leadership and innovative
-            capabilities. Looking ahead, I am excited about the prospect of
-            establishing my own company and expanding it with a dedicated team
-            of employees.
+            A passionate individual with a deep fascination for space and
+            robotics. From a young age, their curiosity about the universe has
+            driven them to explore the mysteries of distant galaxies, stars, and
+            planets. This passion has only grown stronger over time, leading
+            them to dream of contributing to space exploration.
           </p>
           <a
-            href="tel:+998970130322"
+            href="tel:+998997740510"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="150"
-            className="flex items-center mx-auto lg:mx-0 w-fit text-sm border border-[#64ffda] text-[#64ffda] rounded-[4px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-4 duration-200 mt-6 group"
+            className="flex items-center mx-auto lg:mx-0 w-fit text-sm border border-white text-white rounded-[4px] hover:bg-[rgb(104,25,25)] py-2 px-4 duration-200 !mt-10 group"
           >
-            Contact Me <BsTelephoneOutbound className="ml-2 text-[#64ffda]" />
+            Contact Me <BsTelephoneOutbound className="ml-2 text-white" />
           </a>
         </div>
         <div
@@ -94,11 +78,11 @@ function Hero() {
           className="relative sm:ml-5 mt-14 lg:mt-0"
         >
           <img
-            className="max-w-[300px] sm:max-w-[420px] w-full h-[300px] sm:h-[420px] z-50 rounded-tl-[100px] sm:rounded-tl-[150px] rounded-br-[100px] sm:rounded-br-[150px] rounded-tr-[20px]"
-            src={Me}
+            className="max-w-[300px] sm:max-w-[420px] w-full h-[300px] sm:h-[520px] z-50"
+            src={Space}
             alt="front-img"
           />
-          <span className="absolute w-[320px] sm:w-[440px] h-[320px] sm:h-[440px] rounded-full bg-[#114b50] blur-2xl sm:blur-3xl -right-[10px] sm:-right-[0px] top-[0px] -z-10"></span>
+          <span className="absolute w-[250px] sm:w-[350px] h-[20px] sm:h-[50px] rounded-full bg-[#290606] blur-2xl sm:blur-[30px] -right-[10px] sm:-right-[0px] bottom-[10px] -z-10"></span>
         </div>
       </div>
     </section>
