@@ -15,9 +15,9 @@ function Skills() {
         </h2>
 
         <div className="max-w-[700px] mx-auto mt-8 sm:mt-12">
-          <p className="text-white text-center"></p>
+          <p className="text-gray-300 text-center"></p>
           <div className="mt-5">
-            <p className="text-white text-center">
+            <p className="text-gray-300 text-center">
               Here are a few main technologies I’ve been working with so far:
             </p>
           </div>
@@ -25,132 +25,132 @@ function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-4 md:gap-6 mt-10">
           <div data-aos="fade-up" data-aos-duration="600">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
+              <span className="text-base font-medium text-gray-500 dark:text-white">
                 HTML
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                80%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                100%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[80%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[100%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
+              <span className="text-base font-medium text-gray-500 dark:text-white">
                 Css
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                70%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                92%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[70%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[92%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                Python
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                JavaScript (ES6+)
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                85%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                82%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[82%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[82%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                C++
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                React Js
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                65%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                80%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[65%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[80%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                Java
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                Next Js
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                70%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                85%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[70%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[85%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                MS Office
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                Scss
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                98%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                90%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[98%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[90%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                Google apps
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                Tailwind Css
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                99%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                90%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[99%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[90%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                Communication
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                MUI (Material UI)
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                95%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                35%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[95%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[35%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                Teaching and consulting
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                TypeScript
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                99%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                70%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[99%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[70%]"></div>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
             <div className="flex justify-between mb-1 max-w-[400px] w-full">
-              <span className="text-base font-medium text-white dark:text-white">
-                Critical and Logical Thinking
+              <span className="text-base font-medium text-gray-500 dark:text-white">
+                Bootstrap
               </span>
-              <span className="text-sm font-medium text-white dark:text-white">
-                97%
+              <span className="text-sm font-medium text-gray-500 dark:text-white">
+                60%
               </span>
             </div>
-            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-[#52202d]">
-              <div className="bg-[#ffffff] h-2 rounded-full w-[97%]"></div>
+            <div className="max-w-[400px] w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-[#64ffda] h-2 rounded-full w-[60%]"></div>
             </div>
           </div>
         </div>

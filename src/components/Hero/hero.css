@@ -35,8 +35,12 @@
    animation-delay: 0.35s;
 }
 
-#DOT {
+#K {
    animation-delay: 0.4s;
+}
+
+#DOT {
+   animation-delay: 0.45s;
 }
 
 /* transform: translateY(10px); */
@@ -52,6 +56,21 @@
    10% {
       transform: translate(0, 10px);
    }
+}
+
+.dev {
+   font-weight: 700;
+   text-transform: uppercase;
+   background: linear-gradient(90deg, rgb(20, 20, 20), #fff, rgb(20, 20, 20));
+   letter-spacing: 5px;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-repeat: no-repeat;
+   background-size: 80%;
+   animation: shine 5s linear infinite;
+   position: relative;
+   z-index: -1;
 }
 
 @keyframes shine {
