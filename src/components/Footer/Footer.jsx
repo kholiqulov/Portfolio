@@ -2,9 +2,7 @@ import React from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
-import { FiGitlab } from "react-icons/fi";
 
 // ------> Images
 import Me from "../../Assets/Images/me.png";
@@ -13,45 +11,67 @@ function Footer() {
   return (
     <footer className="mt-[80px] sm:mt-[120px]">
       <div className="container mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:[#800020] lg:my-8" />
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <img
-              className="h-[40px] w-[40px] rounded-full z-50"
+              className="h-[40px] md:h-[70px] w-[55px] md:w-[100px] z-50"
               src={Me}
               alt="front-img"
             />
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Academic skills
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-2">
+              <ul className="text-white dark:text-white font-medium space-y-2">
                 <li data-aos="fade-up" data-aos-duration="600">
-                  <p>Math</p>
+                  <p>Calculus 1, 2</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="50"
+                >
                   <p>Physics</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                  <p>English</p>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="100"
+                >
+                  <p>Linear Algebra</p>
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="100"
+                >
+                  <p>OOP</p>
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="100"
+                >
+                  <p>English & Russion</p>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Passion projects
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 space-y-2">
+              <ul className="text-white dark:text-white space-y-2">
                 <li data-aos="fade-up" data-aos-duration="600">
                   <a
-                    href="https://www.linkedin.com/company/codebridge-schooll"
+                    href="/"
                     className="hover:underline"
                     rel="noreferrer"
                     target="_blank"
                   >
-                    CodeBridge School
+                    Spacemen
                   </a>
                 </li>
                 <li
@@ -68,27 +88,13 @@ function Footer() {
                     VistaWave
                   </a>
                 </li>
-                <li
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-delay="100"
-                >
-                  <a
-                    href="https://iapply.org/"
-                    className="hover:underline"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    IApply
-                  </a>
-                </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Legal
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 space-y-2">
+              <ul className="text-white dark:text-white space-y-2">
                 <li data-aos="fade-up" data-aos-duration="600">
                   <a href="/" className="hover:underline">
                     Privacy Policy
@@ -112,7 +118,7 @@ function Footer() {
           <ul className="flex items-center space-x-4 ">
             <li>
               <a
-                href="https://www.linkedin.com/in/nodirbek-kholiqulov-67a712246/"
+                href="https://www.linkedin.com/in/shavkat-sadulloyev-5262a6280/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -120,14 +126,14 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://t.me/khn_dev" target="_blank" rel="noreferrer">
+              <a href="https://t.me/shavkat_s777" target="_blank" rel="noreferrer">
                 <FaTelegramPlane className="text-white w-7 h-7" />
               </a>
             </li>
             <li>
               <a
                 target="_blank"
-                href="https://www.instagram.com/khn_dev/"
+                href="https://www.instagram.com/_moon737/"
                 rel="noreferrer"
               >
                 <FaInstagram className="text-white w-7 h-7" />
@@ -137,31 +143,13 @@ function Footer() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.facebook.com/profile.php?id=100079926716522&mibextid=ZbWKwL"
-              >
-                <FiFacebook className="text-white w-7 h-7" />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/node-nodir"
+                href="https://github.com/shavkat7"
               >
                 <FaGithub className="text-white w-7 h-7" rel="noreferrer" />
               </a>
             </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://gitlab.com/kholiqulov_nodirbek"
-              >
-                <FiGitlab className="text-white w-7 h-7" rel="noreferrer" />
-              </a>
-            </li>
           </ul>
-          <span className="inline-block text-sm text-gray-500 dark:text-gray-400 my-5">
+          <span className="inline-block text-sm text-white dark:text-white my-5">
             © 2022 . All Rights Reserved.
           </span>
         </div>

@@ -10,63 +10,28 @@ import { Context } from "../../Context/ModalContext";
 import "./experience.css";
 
 function Experience() {
-  const [active, setActive] = useState(false);
-  const [active1, setActive1] = useState(false);
+  const [active1, setActive1] = useState(true);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
-  const [active4, setActive4] = useState(false);
-  const [active5, setActive5] = useState(true);
 
   // ------> Context
   const ctx = useContext(Context);
   const { show } = ctx;
 
-  const handleClick = () => {
-    setActive(true);
-    setActive1(false);
-    setActive2(false);
-    setActive3(false);
-    setActive4(false);
-  };
   const handleClick1 = () => {
-    setActive(false);
     setActive1(true);
     setActive2(false);
     setActive3(false);
-    setActive4(false);
-    setActive5(false);
   };
   const handleClick2 = () => {
-    setActive(false);
     setActive1(false);
     setActive2(true);
     setActive3(false);
-    setActive4(false);
-    setActive5(false);
   };
   const handleClick3 = () => {
-    setActive(false);
     setActive1(false);
     setActive2(false);
     setActive3(true);
-    setActive4(false);
-    setActive5(false);
-  };
-  const handleClick4 = () => {
-    setActive(false);
-    setActive1(false);
-    setActive2(false);
-    setActive3(false);
-    setActive4(true);
-    setActive5(false);
-  };
-  const handleClick5 = () => {
-    setActive(false);
-    setActive1(false);
-    setActive2(false);
-    setActive3(false);
-    setActive4(false);
-    setActive5(true);
   };
 
   return (
@@ -86,163 +51,69 @@ function Experience() {
               <div className="w-[70%] sm:w-[25%]">
                 <button
                   className={`${
-                    active5 ? "text-[#64ffda] active bg-[#112240]" : ""
+                    active1 ? "text-[#64ffda] active bg-[#971d3b]" : ""
                   } ${
                     show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
-                  onClick={handleClick5}
+                  } track relative z- 20 text-sm text-white w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#971d3b] rounded-r-md`}
+                  onClick={handleClick1}
                 >
                   VistaWave
                 </button>
                 <button
                   className={`${
-                    active3 ? "text-[#64ffda] active bg-[#112240]" : ""
+                    active2 ? "text-[#64ffda] active bg-[#971d3b]" : ""
                   } ${
                     show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
-                  onClick={handleClick3}
-                >
-                  Codebridge School
-                </button>
-                <button
-                  className={`${
-                    active4 ? "text-[#64ffda] active bg-[#112240]" : ""
-                  } ${
-                    show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
-                  onClick={handleClick4}
-                >
-                  Tragon
-                </button>
-                <button
-                  className={`${
-                    active ? "text-[#64ffda] active bg-[#112240]" : ""
-                  } ${
-                    show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
-                  onClick={handleClick}
-                >
-                  Unical Solutions
-                </button>
-                <button
-                  className={`${
-                    active1 ? "text-[#64ffda] active bg-[#112240]" : ""
-                  } ${
-                    show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
-                  onClick={handleClick1}
-                >
-                  Support - IT Solutions
-                </button>
-                <button
-                  className={`${
-                    active2 ? "text-[#64ffda] active bg-[#112240]" : ""
-                  } ${
-                    show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
+                  } track relative z- 20 text-sm text-white w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#971d3b] rounded-r-md`}
                   onClick={handleClick2}
+                >
+                  SATashkent
+                </button>
+                <button
+                  className={`${
+                    active3 ? "text-[#64ffda] active bg-[#971d3b]" : ""
+                  } ${
+                    show ? "!-z-10" : "z-0"
+                  } track relative z- 20 text-sm text-white w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#971d3b] rounded-r-md`}
+                  onClick={handleClick3}
                 >
                   RoboticsLab
                 </button>
               </div>
               <div className="w-[100%] sm:w-[75%] sm:ml-10 mt-8 sm:mt-0">
-                {active ? (
-                  <>
-                    <h2 className="text-xl text-[#64ffda] font-medium">
-                      <span className="inline-block text-white">
-                        Front End Developer at
-                      </span>{" "}
-                      Unical Solutions
-                    </h2>
-                    <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      Yanuary 2023 - Present
-                    </strong>
-                    <ul className="space-y-3 mt-6">
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          High-Profile Projects: I worked on several
-                          high-profile projects for notable clients, such as
-                          JETOUR. These projects required a high level of
-                          precision and attention to detail, enhancing my
-                          ability to deliver top-quality work under pressure.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Code Accuracy and Problem Avoidance: I paid meticulous
-                          attention to the accuracy of my code, ensuring it was
-                          bug-free and efficient. This focus on precision was a
-                          key factor in the success of our projects, as it
-                          minimized issues and streamlined the development
-                          process.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Version Control and Collaboration on GitHub: I learned
-                          how to work effectively with a team using GitHub. This
-                          included managing branches, conducting code reviews,
-                          and ensuring smooth integration of code changes. These
-                          skills are crucial for collaborative development and
-                          maintaining project integrity.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Customer-Centric Development: Working with
-                          high-profile clients required a deep understanding of
-                          their needs and expectations. I learned to develop
-                          user-friendly solutions that met client requirements
-                          and provided an optimal user experience.
-                        </span>
-                      </li>
-                    </ul>
-                  </>
-                ) : (
-                  ""
-                )}
                 {active1 ? (
                   <>
                     <h2 className="text-xl text-[#64ffda] font-medium">
                       <span className="inline-block text-white">
-                        Front End Developer at
+                        Backend Developer at
                       </span>{" "}
-                      Support - IT Solutions
+                      VistaWave
                     </h2>
                     <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      August 2022 - Yanuary 2023
+                      Yanuary 2024 - Present
                     </strong>
                     <ul className="space-y-3 mt-6">
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Worked with a variety of different languages,
-                          platforms and frameworks management systems such as
-                          JavaScript (ES6+), TypeScript, React Js,
-                          React-router-dom, Tailwind Css, Redux Github, Gitlab
-                          and Netlify
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Learned how to work with a team <br />- Learned
+                          working collaboratively in github
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          This company gave me first change to join a team and
-                          taught me how to increase my level. I attempted a lot
-                          of meetings the company held to encourage their
-                          employees and every meeting had unexpected gifts that
-                          was for hard working peopleю
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Build dynamic, responsive websites designed to
+                          engage users and drive business growth.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          I had a team which made of 5 people. We were so close
-                          toeach other and that is why finding a solutions for
-                          problems was not such difficult.
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Been working with senior developers who teach me
+                          write clean and understandable code so that next
+                          person, who is going to take the responsibility to
+                          process, can read my code easily
                         </span>
                       </li>
                     </ul>
@@ -254,43 +125,38 @@ function Experience() {
                   <>
                     <h2 className="text-xl text-[#64ffda] font-medium">
                       <span className="inline-block text-white">
-                        Front End Developer and Robotics Engineer at
+                        SAT Mentor (Math) at
                       </span>{" "}
-                      RoboticsLab
+                      SATashkent
                     </h2>
                     <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      July 2022 - Present
+                      January 2024 - Present
                     </strong>
                     <ul className="space-y-3 mt-6">
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          During my time at Robotics Lab, I had the unique
-                          opportunity to work in the Robotics Lab, where I
-                          expanded my skill set and discovered a passion for
-                          robotics. This role provided me with diverse learning
-                          experiences and professional growth.
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Problem-solving strategies and critical thinking{" "}
+                          <br />- Encourages students to approach problems
+                          systematically and break them down into smaller steps.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Exploring Frontend Libraries and Robotics: In the
-                          Robotics Lab, I delved into various frontend
-                          development libraries, broadening my technical
-                          knowledge. This experience also sparked my passion for
-                          robotics, leading me to learn C, C++, Python, and ROS
-                          alongside my frontend development duties.
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Foundational math concepts.
+                          <br />- Reinforces essential topics like algebra,
+                          geometry, and data analysis through practice and
+                          explanations.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Version Control and Collaboration on GitHub: I learned
-                          how to work effectively with a team using GitHub. This
-                          included managing branches, conducting code reviews,
-                          and ensuring smooth integration of code changes, which
-                          are crucial for collaborative development.
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Time management and test-taking strategies. <br />-
+                          Teaches students effective techniques for pacing
+                          themselves during the SAT and managing their time
+                          efficiently.
                         </span>
                       </li>
                     </ul>
@@ -302,156 +168,44 @@ function Experience() {
                   <>
                     <h2 className="text-xl text-[#64ffda] font-medium">
                       <span className="inline-block text-white">
-                        Co-Founder of
+                        Robotics Engineer at
                       </span>{" "}
-                      Codebridge School
+                      RoboticsLab
                     </h2>
                     <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      April 2023 - Present
+                      July 2023 - August 2023
                     </strong>
                     <ul className="space-y-3 mt-6">
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Codebridge School is non-profit organization dedicated
-                          to providing free Coding and English language
-                          education to local children. Our mission is to empower
-                          the next generation of learners with the skills and
-                          knowledge they need to succeed in today's digital
-                          world.
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - During my time at Robotics Lab, I had the unique
+                          opportunity to work in the Robotics Lab, where I
+                          expanded my skill set and discovered a passion for
+                          robotics. This role provided me with diverse learning
+                          experiences and professional growth.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          - English Language
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Exploring Frontend Libraries and Robotics: In the
+                          Robotics Lab, I delved into various frontend
+                          development libraries, broadening my technical
+                          knowledge. This experience also sparked my passion for
+                          robotics, leading me to learn C, C++, Python, and ROS
+                          alongside my frontend development duties.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          - IT (Frontend development)
-                        </span>
-                      </li>
-                    </ul>
-                  </>
-                ) : (
-                  ""
-                )}
-                {active4 ? (
-                  <>
-                    <h2 className="text-xl text-[#64ffda] font-medium">
-                      <span className="inline-block text-white">
-                        Frontent Developer at
-                      </span>{" "}
-                      Tragon
-                    </h2>
-                    <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      May - September 2023
-                    </strong>
-                    <ul className="space-y-3 mt-6">
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Remote Team Collaboration: Working with a team from a
-                          distance was a key aspect of this role, allowing me to
-                          develop and refine my remote collaboration skills.
-                          This experience taught me how to effectively
-                          communicate, coordinate tasks, and maintain
-                          productivity despite physical distance.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Project Development: The generator sales project
-                          required a comprehensive understanding of customer
-                          needs and technical requirements. I gained valuable
-                          experience in designing and implementing a seamless
-                          user interface that enhanced the buying experience.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Time Management and Responsibility: Being part of a
-                          project with significant impact required me to manage
-                          my time effectively and take full responsibility for
-                          my tasks. This experience reinforced the importance of
-                          accountability and meeting project deadlines.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          Customer-Centric Design: The project emphasized the
-                          importance of creating user-friendly solutions. I
-                          learned how to gather and incorporate user feedback,
-                          ensuring the final product met customer expectations
-                          and provided an optimal user experience.
-                        </span>
-                      </li>
-                    </ul>
-                  </>
-                ) : (
-                  ""
-                )}
-                {active5 ? (
-                  <>
-                    <h2 className="text-xl text-[#64ffda] font-medium">
-                      <span className="inline-block text-white">
-                        Co-Founder of
-                      </span>{" "}
-                      VistaWave
-                    </h2>
-                    <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      Yanuary 2024 - Present
-                    </strong>
-                    <ul className="space-y-3 mt-6">
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          At VistaWave, we excel in delivering top-notch IT
-                          services and consulting solutions tailored for large
-                          enterprises. Our goal is to help businesses establish
-                          a strong and effective online presence. Our
-                          specialized services include:
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          🌐 Web Development: We build dynamic, responsive
-                          websites designed to engage users and drive business
-                          growth.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          📱 Mobile Development: Our team creates powerful
-                          Android applications that meet your specific business
-                          needs.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          🖥️ WordPress Solutions: We provide end-to-end
-                          WordPress development, ensuring your site is robust,
-                          secure, and user-friendly.
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <BiCaretRight className="w-4 h-4 text-[#64ffda] mt-1 mr-2" />
-                        <span className="inline-block max-w-[500px] w-full text-[#8892b0]">
-                          🎨 UX/UI Design: Our expert designers develop
-                          intuitive and attractive user interfaces and
-                          experiences that enhance user satisfaction. At
-                          VistaWave, we are committed to innovation and
-                          excellence, ensuring that our IT solutions are of the
-                          highest quality, scalable, and tailored to your unique
-                          business objectives.
+                        <span className="inline-block max-w-[500px] w-full text-white">
+                          - Version Control and Collaboration on GitHub: I
+                          learned how to work effectively with a team using
+                          GitHub. This included managing branches, conducting
+                          code reviews, and ensuring smooth integration of code
+                          changes, which are crucial for collaborative
+                          development.
                         </span>
                       </li>
                     </ul>

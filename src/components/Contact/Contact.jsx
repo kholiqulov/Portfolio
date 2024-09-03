@@ -7,8 +7,8 @@ function Contact() {
   const [fullName, setFullName] = useState("");
   const [number, setNumber] = useState("");
 
-  const token = "5850891292:AAEloOzyUHZkmtt6lytPkuOlsiVVH2l_Z6k";
-  const chatId = "5022460942";
+  const token = "7138049830:AAF0bdqGqCn2l2xwilg2KHQB2nJ8ZU9CHYg";
+  const chatId = "5322473767";
 
   const onSubmit = (evt) => {
     evt.preventDefault();
@@ -46,7 +46,7 @@ function Contact() {
           data-aos-duration="600"
           className="mt-8 sm:mt-12"
         >
-          <p className="text-gray-300 text-base text-center max-w-[600px] w-full mx-auto">
+          <p className="text-white text-base text-center max-w-[600px] w-full mx-auto">
             You will be able to contact with me after filling up this form with
             details given below and it's the best way you can receive quick
             response!
@@ -101,7 +101,7 @@ function Contact() {
               </div>
               <div className="flex justify-center">
                 <button
-                  className="max-w-[150px] w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded "
+                  className="max-w-[150px] w-full bg-[#800020] hover:bg-[#431420] text-white font-medium py-2 px-4 rounded "
                   type="submit"
                 >
                   Send
