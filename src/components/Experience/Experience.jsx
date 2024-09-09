@@ -106,6 +106,16 @@ function Experience() {
                 </button>
                 <button
                   className={`${
+                    active2 ? "text-[#64ffda] active bg-[#112240]" : ""
+                  } ${
+                    show ? "!-z-10" : "z-0"
+                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
+                  onClick={handleClick2}
+                >
+                  RoboticsLab
+                </button>
+                <button
+                  className={`${
                     active4 ? "text-[#64ffda] active bg-[#112240]" : ""
                   } ${
                     show ? "!-z-10" : "z-0"
@@ -133,16 +143,6 @@ function Experience() {
                   onClick={handleClick1}
                 >
                   Support - IT Solutions
-                </button>
-                <button
-                  className={`${
-                    active2 ? "text-[#64ffda] active bg-[#112240]" : ""
-                  } ${
-                    show ? "!-z-10" : "z-0"
-                  } track relative z- 20 text-sm text-gray-300 w-full text-start pl-4 py-[10px] duration-300 hover:bg-[#112240] rounded-r-md`}
-                  onClick={handleClick2}
-                >
-                  RoboticsLab
                 </button>
               </div>
               <div className="w-[100%] sm:w-[75%] sm:ml-10 mt-8 sm:mt-0">
@@ -259,7 +259,7 @@ function Experience() {
                       RoboticsLab
                     </h2>
                     <strong className="inline-block font-normal text-sm text-white tracking-wide">
-                      July 2022 - Present
+                      March - August 2024
                     </strong>
                     <ul className="space-y-3 mt-6">
                       <li className="flex items-start">
