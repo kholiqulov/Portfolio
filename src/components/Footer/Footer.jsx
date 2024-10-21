@@ -182,7 +182,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <span className="inline-block text-sm text-gray-500 dark:text-gray-400 my-5">
+          <span className="inline-block text-sm text-white dark:text-white my-5">
             © 2022 . All Rights Reserved.
           </span>
         </div>

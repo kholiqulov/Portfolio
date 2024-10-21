@@ -95,7 +95,7 @@ function Hero() {
           className="relative sm:ml-5 mt-14 lg:mt-0"
         >
           <img
-            className="max-w-[300px] sm:max-w-[420px] w-full h-[300px] sm:h-[420px] z-50 rounded-tl-[100px] sm:rounded-tl-[150px] rounded-br-[100px] sm:rounded-br-[150px] rounded-tr-[20px]"
+            className="max-w-[300px] sm:max-w-[400px] w-full h-[270px] sm:h-[370px] z-50 rounded-tl-[100px] sm:rounded-tl-[150px] rounded-br-[100px] sm:rounded-br-[150px] rounded-tr-[20px]"
             src={Me}
             alt="front-img"
           />
