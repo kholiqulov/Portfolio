@@ -107,6 +107,8 @@ function Header() {
             </a>
             <button
               className="flex flex-col justify-between w-7 h-5"
+              role="button"
+              aria-label="munubutton"
               onClick={() => {
                 setShowModal(true);
                 setShow(true);
