@@ -38,6 +38,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#home"
+                  alt="about"
                   className="nav_link text-white group-hover:text-[#64ffda] duration-150"
                 >
                   About
@@ -46,6 +47,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#skills"
+                  alt="skills"
                   className="nav_link text-white group-hover:text-[#64ffda] duration-150"
                 >
                   Skills
@@ -54,6 +56,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#experience"
+                  alt="experience"
                   className="nav_link text-white group-hover:text-[#64ffda] duration-150"
                 >
                   Experience
@@ -62,6 +65,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#work"
+                  alt="portfolio"
                   className="nav_link text-white group-hover:text-[#64ffda] duration-150"
                 >
                   Portfolio
@@ -70,6 +74,7 @@ function Header() {
               <li className="nav_item text-sm px-2 py-1 group">
                 <a
                   href="#contact"
+                  alt="contact"
                   className="nav_link text-white group-hover:text-[#64ffda] duration-150"
                 >
                   Contact
@@ -79,6 +84,7 @@ function Header() {
             <a
               href={Resume}
               download="Nodirbek's resume.pdf"
+              alt="resume"
               className="flex items-center text-sm ml-5 border border-[#64ffda] text-[#64ffda] rounded-[6px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-3 duration-200"
             >
               Resume
@@ -90,6 +96,7 @@ function Header() {
           <div className="flex md:hidden items-center space-x-10">
             <a
               href={Resume}
+              alt="resume"
               download="Nodirbek's resume.pdf"
               className="flex items-center text-sm ml-5 border border-[#64ffda] text-[#64ffda] rounded-[6px] hover:bg-[rgba(100,255,218,0.1)] py-2 px-3 duration-200"
             >
@@ -151,6 +158,7 @@ function Header() {
           >
             <a
               href="#home"
+              alt="home"
               className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
@@ -168,6 +176,7 @@ function Header() {
           >
             <a
               href="#skills"
+              alt="skills"
               className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
@@ -185,6 +194,7 @@ function Header() {
           >
             <a
               href="#experience"
+              alt="experience"
               className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
@@ -202,6 +212,7 @@ function Header() {
           >
             <a
               href="#work"
+              alt="projects"
               className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
@@ -219,6 +230,7 @@ function Header() {
           >
             <a
               href="#contact"
+              alt="contact"
               className="flex flex-col items-center justify-center font-medium text-sm text-[#0a192f] hover:text-white duration-200 py-2"
             >
               <span className="block text-lg mb-[2px] sm:mr-2">
@@ -229,6 +241,7 @@ function Header() {
           </li>
           <a
             href={Resume}
+            alt="resume"
             download="Nodirbek's resume.pdf"
             className="flex flex-col-reverse items-center justify-center text-sm w-full border border-[#0a192f] text-[#0a192f] hover:text-white rounded-[6px] bg-white hover:bg-[#0a192f] py-2 px-3 mx-auto duration-300"
           >

@@ -31,10 +31,18 @@ function Footer() {
                 <li data-aos="fade-up" data-aos-duration="600">
                   <p>Math</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="50"
+                >
                   <p>Physics</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="100"
+                >
                   <p>English</p>
                 </li>
               </ul>
@@ -49,6 +57,7 @@ function Footer() {
                     href="https://www.linkedin.com/company/codebridge-schooll"
                     className="hover:underline"
                     rel="noreferrer"
+                    alt="codebridgeschool"
                     target="_blank"
                   >
                     CodeBridge School
@@ -63,6 +72,7 @@ function Footer() {
                     href="https://www.vistawaves.uz/"
                     className="hover:underline"
                     rel="noreferrer"
+                    alt="vistawave"
                     target="_blank"
                   >
                     VistaWave
@@ -77,6 +87,7 @@ function Footer() {
                     href="https://iapply.org/"
                     className="hover:underline"
                     rel="noreferrer"
+                    alt="IApply"
                     target="_blank"
                   >
                     IApply
@@ -90,7 +101,7 @@ function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 space-y-2">
                 <li data-aos="fade-up" data-aos-duration="600">
-                  <a href="/" className="hover:underline">
+                  <a href="/" className="hover:underline" alt="link">
                     Privacy Policy
                   </a>
                 </li>
@@ -99,7 +110,7 @@ function Footer() {
                   data-aos-duration="600"
                   data-aos-delay="50"
                 >
-                  <a href="/" className="hover:underline">
+                  <a href="/" className="hover:underline" alt="link">
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -115,12 +126,18 @@ function Footer() {
                 href="https://www.linkedin.com/in/nodirbek-kholiqulov-67a712246/"
                 target="_blank"
                 rel="noreferrer"
+                alt="linkedIn"
               >
                 <CiLinkedin className="text-white w-7 h-7" />
               </a>
             </li>
             <li>
-              <a href="https://t.me/khn_dev" target="_blank" rel="noreferrer">
+              <a
+                href="https://t.me/khn_dev"
+                target="_blank"
+                rel="noreferrer"
+                alt="telegram"
+              >
                 <FaTelegramPlane className="text-white w-7 h-7" />
               </a>
             </li>
@@ -129,6 +146,7 @@ function Footer() {
                 target="_blank"
                 href="https://www.instagram.com/khn_dev/"
                 rel="noreferrer"
+                alt="instagram"
               >
                 <FaInstagram className="text-white w-7 h-7" />
               </a>
@@ -137,6 +155,7 @@ function Footer() {
               <a
                 target="_blank"
                 rel="noreferrer"
+                alt="facebook"
                 href="https://www.facebook.com/profile.php?id=100079926716522&mibextid=ZbWKwL"
               >
                 <FiFacebook className="text-white w-7 h-7" />
@@ -146,18 +165,20 @@ function Footer() {
               <a
                 target="_blank"
                 rel="noreferrer"
+                alt="github"
                 href="https://github.com/node-nodir"
               >
-                <FaGithub className="text-white w-7 h-7" rel="noreferrer" />
+                <FaGithub className="text-white w-7 h-7" />
               </a>
             </li>
             <li>
               <a
                 target="_blank"
                 rel="noreferrer"
+                alt="gitlab"
                 href="https://gitlab.com/kholiqulov_nodirbek"
               >
-                <FiGitlab className="text-white w-7 h-7" rel="noreferrer" />
+                <FiGitlab className="text-white w-7 h-7" />
               </a>
             </li>
           </ul>
