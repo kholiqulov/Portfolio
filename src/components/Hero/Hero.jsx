@@ -19,7 +19,7 @@ function Hero() {
       <div className="container flex flex-wrap justify-center lg:flex lg:items-center lg:justify-between">
         <div className="max-w-[500px] text-center lg:text-start">
           <div data-aos="fade-up" data-aos-duration="600" className="flex">
-            <h2 className="flex mx-auto lg:mx-0 items-end font-semibold text-4xl sm:text-5xl text-white tracking-normal">
+            <h1 className="flex mx-auto lg:mx-0 items-end font-semibold text-4xl sm:text-5xl text-white tracking-normal">
               Hi, I'm
               <ul id="enthusiasm" className="list flex items-center m-0 p-0">
                 <li id="N" className="item">
@@ -50,7 +50,7 @@ function Hero() {
                   .
                 </li>
               </ul>
-            </h2>
+            </h1>
           </div>
           <strong
             data-aos="fade-left"
@@ -79,6 +79,7 @@ function Hero() {
           </p>
           <a
             href="tel:+998970130322"
+            alt="contactme"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="150"
