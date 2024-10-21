@@ -71,6 +71,7 @@ function Contact() {
                   Full name
                 </label>
                 <input
+                  aria-label="inout"
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-600"
                   id="username"
                   type="text"
@@ -88,6 +89,7 @@ function Contact() {
                   Phone number
                 </label>
                 <input
+                  aria-label="inout"
                   className="shadow appearance-none border rounded w-full py-2 pl-14 pr-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-blue-600"
                   id="password"
                   type="text"

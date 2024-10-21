@@ -57,7 +57,7 @@ function Footer() {
                     href="https://www.linkedin.com/company/codebridge-schooll"
                     className="hover:underline"
                     rel="noreferrer"
-                    alt="codebridgeschool"
+                    aria-label="codebridgeschool"
                     target="_blank"
                   >
                     CodeBridge School
@@ -72,7 +72,7 @@ function Footer() {
                     href="https://www.vistawaves.uz/"
                     className="hover:underline"
                     rel="noreferrer"
-                    alt="vistawave"
+                    aria-label="vistawave"
                     target="_blank"
                   >
                     VistaWave
@@ -87,7 +87,7 @@ function Footer() {
                     href="https://iapply.org/"
                     className="hover:underline"
                     rel="noreferrer"
-                    alt="IApply"
+                    aria-label="IApply"
                     target="_blank"
                   >
                     IApply
@@ -101,7 +101,7 @@ function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 space-y-2">
                 <li data-aos="fade-up" data-aos-duration="600">
-                  <a href="/" className="hover:underline" alt="link">
+                  <a href="/" className="hover:underline" aria-label="link">
                     Privacy Policy
                   </a>
                 </li>
@@ -110,7 +110,7 @@ function Footer() {
                   data-aos-duration="600"
                   data-aos-delay="50"
                 >
-                  <a href="/" className="hover:underline" alt="link">
+                  <a href="/" className="hover:underline" aria-label="link">
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -126,7 +126,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/nodirbek-kholiqulov-67a712246/"
                 target="_blank"
                 rel="noreferrer"
-                alt="linkedIn"
+                aria-label="linkedIn"
               >
                 <CiLinkedin className="text-white w-7 h-7" />
               </a>
@@ -136,7 +136,7 @@ function Footer() {
                 href="https://t.me/khn_dev"
                 target="_blank"
                 rel="noreferrer"
-                alt="telegram"
+                aria-label="telegram"
               >
                 <FaTelegramPlane className="text-white w-7 h-7" />
               </a>
@@ -146,7 +146,7 @@ function Footer() {
                 target="_blank"
                 href="https://www.instagram.com/khn_dev/"
                 rel="noreferrer"
-                alt="instagram"
+                aria-label="instagram"
               >
                 <FaInstagram className="text-white w-7 h-7" />
               </a>
@@ -155,7 +155,7 @@ function Footer() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                alt="facebook"
+                aria-label="facebook"
                 href="https://www.facebook.com/profile.php?id=100079926716522&mibextid=ZbWKwL"
               >
                 <FiFacebook className="text-white w-7 h-7" />
@@ -165,7 +165,7 @@ function Footer() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                alt="github"
+                aria-label="github"
                 href="https://github.com/node-nodir"
               >
                 <FaGithub className="text-white w-7 h-7" />
@@ -175,7 +175,7 @@ function Footer() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                alt="gitlab"
+                aria-label="gitlab"
                 href="https://gitlab.com/kholiqulov_nodirbek"
               >
                 <FiGitlab className="text-white w-7 h-7" />
