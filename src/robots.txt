@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /internal-api/
+Disallow: /private-folder/
 
 sitemap: https://nodirbekdev.uz/
