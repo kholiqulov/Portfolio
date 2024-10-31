@@ -3,7 +3,7 @@ import { TfiGallery } from "react-icons/tfi";
 
 // ------> Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
+import { EffectCoverflow, Autoplay } from "swiper";
 
 // ------> Images
 import Powermate from "../../Assets/Images/powermate.png";
@@ -14,6 +14,7 @@ import IApply from "../../Assets/Images/IApply.png";
 
 // ------> Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
@@ -32,7 +33,7 @@ const data = [
   {
     id: 1,
     title: "Powerful - industial diesel generators",
-    text: "Power Met International are experts in importing and installing generator systems to keep your business running smoothly.",
+    text: "PowerMet International is expert in importing and installing generator systems to keep your business running smoothly and produces innovative generators.",
     image: Powermate,
     alt: "Powermate",
     link: "https://www.generatoruz.com/uz",
@@ -48,7 +49,7 @@ const data = [
   {
     id: 3,
     title: "Bito - Automate your business with us",
-    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers. It helps you to built strong presence in today's digital world.",
     image: Bito,
     alt: "Bito",
     link: "https://bito-landing-page.vercel.app/",
@@ -61,6 +62,87 @@ const data = [
     alt: "IApply",
     link: "https://iapply.org/",
   },
+  {
+    id: 5,
+    title: "VISTAWAVE - IT company in Uzbekistan",
+    text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
+    image: VistaWave,
+    alt: "VistaWave",
+    link: "https://vistawaves.uz/",
+  },
+  {
+    id: 6,
+    title: "Powerful - industial diesel generators",
+    text: "PowerMet International is expert in importing and installing generator systems to keep your business running smoothly and produces innovative generators.",
+    image: Powermate,
+    alt: "Powermate",
+    link: "https://www.generatoruz.com/uz",
+  },
+  {
+    id: 7,
+    title: "INTEX - Pools from intex in Tashkent",
+    text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
+    image: Intex,
+    alt: "Intex",
+    link: "https://new-intex.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Bito - Automate your business with us",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers. It helps you to built strong presence in today's digital world.",
+    image: Bito,
+    alt: "Bito",
+    link: "https://bito-landing-page.vercel.app/",
+  },
+  {
+    id: 9,
+    title: "IApply - Your gateway to studying abroad",
+    text: "Get free consultation about studying abroad ... Our dedicated team at iApply.org is here to offer personalized advice, guiding you towards your ideal university.",
+    image: IApply,
+    alt: "IApply",
+    link: "https://iapply.org/",
+  },
+  {
+    id: 10,
+    title: "VISTAWAVE - IT company in Uzbekistan",
+    text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
+    image: VistaWave,
+    alt: "VistaWave",
+    link: "https://vistawaves.uz/",
+  },
+  {
+    id: 11,
+    title: "Powerful - industial diesel generators",
+    text: "PowerMet International is expert in importing and installing generator systems to keep your business running smoothly and produces innovative generators.",
+    image: Powermate,
+    alt: "Powermate",
+    link: "https://www.generatoruz.com/uz",
+  },
+  {
+    id: 12,
+    title: "INTEX - Pools from intex in Tashkent",
+    text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
+    image: Intex,
+    alt: "Intex",
+    link: "https://new-intex.vercel.app/",
+  },
+  {
+    id: 13,
+    title: "Bito - Automate your business with us",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers. It helps you to built strong presence in today's digital world.",
+    image: Bito,
+    alt: "Bito",
+    link: "https://bito-landing-page.vercel.app/",
+  },
+  {
+    id: 14,
+    title: "IApply - Your gateway to studying abroad",
+    text: "Get free consultation about studying abroad ... Our dedicated team at iApply.org is here to offer personalized advice, guiding you towards your ideal university.",
+    image: IApply,
+    alt: "IApply",
+    link: "https://iapply.org/",
+  },
+  
 ];
 
 function Work() {
@@ -84,43 +166,44 @@ function Work() {
           experience while doing these projects.
         </p>
         <Swiper
-          className="mySwiper mt-12"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="600"
-          navigation={true}
-          spaceBetween={10}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
+          className="swiper-container mt-12 relative"
+          navigation={false}
+          pagination={false}
+          effect="coverflow"
+          grabCursor="true"
+          centeredSlides="true"
+          loop="true"
+          slidesPerView={"auto"}
+          // spaceBetween={50}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1.2,
+              slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2.1,
-            },
-            1024: {
               slidesPerView: 3,
             },
+            1024: {
+              slidesPerView: 4,
+            },
           }}
-          modules={[Navigation, Autoplay]}
+          modules={[Autoplay, EffectCoverflow]}
         >
           <div>
             {data?.map((item) => (
-              <SwiperSlide key={item?.id}>
-                <div className="max-w-[280px] sm:max-w-[320px] h-[470px] sm:h-[450px] w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <img
-                    className="rounded-t-lg w-full h-[170px] cursor-pointer object-cover"
-                    src={item?.image}
-                    alt={item?.alt}
-                  />
-                  <div className="p-5">
-                    <h3 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <SwiperSlide key={item?.id} className="left-[25px] sm:left-[-45px]">
+                <div className="card">
+                  <img src={item?.image} alt="content_image" />
+                  <div className="card-content">
+                    <h2 className="!max-w-[260px] w-full text-lg font-extrabold">
                       {item?.title}
-                    </h3>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    </h2>
+                    <p className="!mb-3 font-normal text-[14px] text-[#f4f4f4]">
                       {item?.text}
                     </p>
                     <a
@@ -128,11 +211,13 @@ function Work() {
                       aria-label="seeproject"
                       rel="noreferrer"
                       href={item?.link}
-                      className="inline-flex items-center space-x-2 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      className="inline-flex items-center space-x-2 px-3 py-2 text-sm font-medium rounded-lg hover:bg-[#64ffda] border-[#64ffda] border group transition ease-in-out delay-200"
                     >
-                      <span className="block">See project</span>
+                      <span className="block text-[#64ffda] group-hover:text-[#0a192f]">
+                        See project
+                      </span>
                       <svg
-                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2 text-[#64ffda] group-hover:text-[#0a192f]"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

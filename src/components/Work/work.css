@@ -1,19 +1,90 @@
-.swiper-button-prev::after {
-    content: "";
-    position: absolute;
-    width: 45px !important;
-    height: 45px;
-    background-image: url("../../Assets/Images/prev.svg") !important;
-    background-repeat: no-repeat;
-    background-size: cover !important;
+:root {
+  --primary: #6a59ff;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
 }
 
-.swiper-button-next::after {
-    content: "";
+.card {
+  width: 20rem;
+  height: 500px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: rgb(240, 240, 240);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  background-color: black;
+
+  img {
     position: absolute;
-    width: 45px !important;
-    height: 45px;
-    background-image: url("../../Assets/Images/next.svg") !important;
-    background-repeat: no-repeat;
-    background-size: cover !important;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    width: 100%;
+    font-size: 17px;
+    transition: inset 0.3s 0.3s ease-out;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0a192f;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+  }
+
+  p,
+  a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    margin: 0;
+  }
+
+  p {
+    inset: auto auto 80px 30px;
+  }
+
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover h2 {
+    inset: auto auto 210px 30px;
+    transition: inset 0.3s ease-out;
+    color: #64ffda;
+    background-color: transparent;
+    padding: 0 !important;
+    font-size: 18px;
+  }
+
+  &:hover p,
+  &:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+
+  &:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 0.5;
+    filter: blur(8px);
+  }
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
 }
