@@ -99,7 +99,7 @@ function Contact() {
                   placeholder="97 000 00 00"
                   maxLength={9}
                 />
-                <span className="absolute z-20 left-[10px] top-[27.5px]">+998</span>
+                <span className="absolute z-20 left-[10px] top-[34.5px]">+998</span>
               </div>
               <div className="flex justify-center">
                 <button
