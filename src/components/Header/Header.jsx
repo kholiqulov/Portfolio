@@ -244,7 +244,7 @@ function Header() {
             href={Resume}
             aria-label="resume"
             download="Nodirbek's resume.pdf"
-            className="flex flex-col-reverse items-center justify-center text-sm w-full border border-[#0a192f] text-[#0a192f] hover:text-white rounded-[6px] bg-white hover:bg-[#0a192f] py-2 px-3 mx-auto duration-300"
+            className="flex flex-col-reverse items-center justify-center text-sm w-full border border-[#0a192f] text-[#0a192f] hover:text-white rounded-[6px] bg-white hover:bg-[#0a192f] py-2 px-3 mx-auto duration-200"
           >
             Resume
             <span className="inline-block">

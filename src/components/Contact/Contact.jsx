@@ -58,7 +58,7 @@ function Contact() {
           data-aos-duration="600"
           className="flex items-center justify-center mt-8 sm:mt-12"
         >
-          <div className="w-full max-w-[340px] sm:max-w-[450px]">
+          <div className="w-full max-w-[340px] sm:max-w-[400px]">
             <form
               onSubmit={onSubmit}
               className="bg-white shadow-md rounded-2xl px-4 sm:px-8 pt-[25px] sm:pt-[50px] pb-5 sm:pb-10"
@@ -72,7 +72,7 @@ function Contact() {
                 </label>
                 <input
                   aria-label="inout"
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-600"
+                  className="shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#64ffda] border-2"
                   id="username"
                   type="text"
                   required
@@ -90,7 +90,7 @@ function Contact() {
                 </label>
                 <input
                   aria-label="inout"
-                  className="shadow appearance-none border rounded w-full py-2 pl-14 pr-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-blue-600"
+                  className="shadow appearance-none rounded w-full py-2 pl-14 pr-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-[#64ffda] border-2"
                   id="password"
                   type="text"
                   required
@@ -99,11 +99,11 @@ function Contact() {
                   placeholder="97 000 00 00"
                   maxLength={9}
                 />
-                <span className="absolute z-20 left-2 top-[34.5px]">+998</span>
+                <span className="absolute z-20 left-[10px] top-[27.5px]">+998</span>
               </div>
               <div className="flex justify-center">
                 <button
-                  className="max-w-[150px] w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded "
+                  className="max-w-[150px] w-full bg-white hover:bg-[#64ffda] text-[#0a192f] hover:text-white font-medium py-2 px-4 rounded-[6px] border-2 border-[#64ffda] transition duration-150"
                   type="submit"
                 >
                   Send

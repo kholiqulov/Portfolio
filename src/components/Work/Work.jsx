@@ -49,7 +49,7 @@ const data = [
   {
     id: 3,
     title: "Bito - Automate your business with us",
-    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers. It helps you to built strong presence in today's digital world.",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
     image: Bito,
     alt: "Bito",
     link: "https://bito-landing-page.vercel.app/",
@@ -89,7 +89,7 @@ const data = [
   {
     id: 8,
     title: "Bito - Automate your business with us",
-    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers. It helps you to built strong presence in today's digital world.",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
     image: Bito,
     alt: "Bito",
     link: "https://bito-landing-page.vercel.app/",
@@ -129,7 +129,7 @@ const data = [
   {
     id: 13,
     title: "Bito - Automate your business with us",
-    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers. It helps you to built strong presence in today's digital world.",
+    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
     image: Bito,
     alt: "Bito",
     link: "https://bito-landing-page.vercel.app/",
@@ -142,7 +142,6 @@ const data = [
     alt: "IApply",
     link: "https://iapply.org/",
   },
-  
 ];
 
 function Work() {
@@ -151,7 +150,7 @@ function Work() {
       <div className="container">
         <h2 className="flex items-center justify-center text-xl sm:text-2xl text-white">
           <span className="inline-block w-14 sm:w-40 h-[1px] bg-[rgba(100,255,218,0.1)] rounded-full mr-5"></span>{" "}
-          Portfolio{" "}
+          Portfolio
           <span className="inline-block ml-2">
             <TfiGallery className="text-lg sm:text-xl" />
           </span>
@@ -183,7 +182,7 @@ function Work() {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 2,
             },
             768: {
               slidesPerView: 3,
@@ -196,13 +195,11 @@ function Work() {
         >
           <div>
             {data?.map((item) => (
-              <SwiperSlide key={item?.id} className="left-[25px] sm:left-[-45px]">
+              <SwiperSlide key={item?.id} className="left-[-60px] sm:left-[-20px]">
                 <div className="card">
                   <img src={item?.image} alt="content_image" />
                   <div className="card-content">
-                    <h2 className="!max-w-[260px] w-full text-lg font-extrabold">
-                      {item?.title}
-                    </h2>
+                    <h2 className="text-lg font-extrabold">{item?.title}</h2>
                     <p className="!mb-3 font-normal text-[14px] text-[#f4f4f4]">
                       {item?.text}
                     </p>
