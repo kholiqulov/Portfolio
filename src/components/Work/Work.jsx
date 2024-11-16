@@ -8,9 +8,13 @@ import { EffectCoverflow, Autoplay } from "swiper";
 // ------> Images
 import Powermate from "../../Assets/Images/powermate.png";
 import VistaWave from "../../Assets/Images/vistawave.png";
+import Optimum from "../../Assets/Images/optimum.png";
+import Product from "../../Assets/Images/product.png";
+import IApply from "../../Assets/Images/IApply.png";
+import Rental from "../../Assets/Images/rental.png";
+import Coffeeroaster from "../../Assets/Images/Coffeeroaster.png";
 import Intex from "../../Assets/Images/intex.png";
 import Bito from "../../Assets/Images/bito.png";
-import IApply from "../../Assets/Images/IApply.png";
 
 // ------> Import Swiper styles
 import "swiper/css";
@@ -64,46 +68,38 @@ const data = [
   },
   {
     id: 5,
-    title: "VISTAWAVE - IT company in Uzbekistan",
-    text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
-    image: VistaWave,
-    alt: "VistaWave",
-    link: "https://vistawaves.uz/",
+    title: "Car rental - Rent a car appropriately.",
+    text: "We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet and you can find any cars.",
+    image: Rental,
+    alt: "Rental",
+    link: "https://cheery-haupia-8e0c06.netlify.app/",
   },
   {
     id: 6,
-    title: "Powerful - industial diesel generators",
-    text: "PowerMet International is expert in importing and installing generator systems to keep your business running smoothly and produces innovative generators.",
-    image: Powermate,
-    alt: "Powermate",
-    link: "https://www.generatoruz.com/uz",
+    title: "Product - Work at the speed of thought",
+    text: "Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.",
+    image: Product,
+    alt: "Product",
+    link: "https://nodirbek-my-product.netlify.app/",
   },
   {
     id: 7,
-    title: "INTEX - Pools from intex in Tashkent",
-    text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
-    image: Intex,
-    alt: "Intex",
-    link: "https://new-intex.vercel.app/",
+    title: "Coffeeroasters - Great coffee made simple",
+    text: "Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.",
+    image: Coffeeroaster,
+    alt: "Coffeeroaster",
+    link: "https://nodirbek-coffe-maket.netlify.app/",
   },
   {
     id: 8,
-    title: "Bito - Automate your business with us",
-    text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
-    image: Bito,
-    alt: "Bito",
-    link: "https://bito-landing-page.vercel.app/",
+    title: "Optimum - Transportation Services",
+    text: "Optimum Auto Transport is a vehicle shipping company in the USA. We make sure that our professional drivers serve customers with very high quality.",
+    image: Optimum,
+    alt: "Optimum",
+    link: "https://transportation-services.vercel.app/",
   },
   {
     id: 9,
-    title: "IApply - Your gateway to studying abroad",
-    text: "Get free consultation about studying abroad ... Our dedicated team at iApply.org is here to offer personalized advice, guiding you towards your ideal university.",
-    image: IApply,
-    alt: "IApply",
-    link: "https://iapply.org/",
-  },
-  {
-    id: 10,
     title: "VISTAWAVE - IT company in Uzbekistan",
     text: "VistaWave is an experienced and passionate group of designers, developers and project managers. Every client we work with becomes a part of the team.",
     image: VistaWave,
@@ -111,7 +107,7 @@ const data = [
     link: "https://vistawaves.uz/",
   },
   {
-    id: 11,
+    id: 10,
     title: "Powerful - industial diesel generators",
     text: "PowerMet International is expert in importing and installing generator systems to keep your business running smoothly and produces innovative generators.",
     image: Powermate,
@@ -119,7 +115,7 @@ const data = [
     link: "https://www.generatoruz.com/uz",
   },
   {
-    id: 12,
+    id: 11,
     title: "INTEX - Pools from intex in Tashkent",
     text: "Swimming pools from intex are affordable, high-quality, reliable and environmentally friendly products that are designed for a pleasant stay for the whole family.",
     image: Intex,
@@ -127,7 +123,7 @@ const data = [
     link: "https://new-intex.vercel.app/",
   },
   {
-    id: 13,
+    id: 12,
     title: "Bito - Automate your business with us",
     text: "Everything you need in one system: sales, procurement, warehouse, finance, customers and suppliers.",
     image: Bito,
@@ -135,12 +131,44 @@ const data = [
     link: "https://bito-landing-page.vercel.app/",
   },
   {
-    id: 14,
+    id: 13,
     title: "IApply - Your gateway to studying abroad",
     text: "Get free consultation about studying abroad ... Our dedicated team at iApply.org is here to offer personalized advice, guiding you towards your ideal university.",
     image: IApply,
     alt: "IApply",
     link: "https://iapply.org/",
+  },
+  {
+    id: 14,
+    title: "Car rental - Rent a car appropriately.",
+    text: "We provide our customers with the most incredible driving emotions. That is why there are only world-class cars in our fleet and you can find any cars.",
+    image: Rental,
+    alt: "Rental",
+    link: "https://cheery-haupia-8e0c06.netlify.app/",
+  },
+  {
+    id: 15,
+    title: "Product - Work at the speed of thought",
+    text: "Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.",
+    image: Product,
+    alt: "Product",
+    link: "https://nodirbek-my-product.netlify.app/",
+  },
+  {
+    id: 16,
+    title: "Coffeeroasters - Great coffee made simple",
+    text: "Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.",
+    image: Coffeeroaster,
+    alt: "Coffeeroaster",
+    link: "https://nodirbek-coffe-maket.netlify.app/",
+  },
+  {
+    id: 17,
+    title: "Optimum - Transportation Services",
+    text: "Optimum Auto Transport is a vehicle shipping company in the USA. We make sure that our professional drivers serve customers with very high quality.",
+    image: Optimum,
+    alt: "Optimum",
+    link: "https://transportation-services.vercel.app/",
   },
 ];
 
@@ -195,7 +223,10 @@ function Work() {
         >
           <div>
             {data?.map((item) => (
-              <SwiperSlide key={item?.id} className="left-[-60px] sm:left-[-20px]">
+              <SwiperSlide
+                key={item?.id}
+                className="left-[-60px] sm:left-[-20px]"
+              >
                 <div className="card">
                   <img src={item?.image} alt="content_image" />
                   <div className="card-content">
