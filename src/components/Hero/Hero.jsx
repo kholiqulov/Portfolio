@@ -66,16 +66,13 @@ function Hero() {
             data-aos-delay="100"
             className="text-gray-300 text-base"
           >
-            As a passionate and skilled Front End Developer, I bring over a year
-            of experience in leveraging JavaScript, React.js, and Next.js to
-            create exceptional products for customers. My expertise includes
-            working collaboratively on GitHub, ensuring seamless team
-            integration and responsibility for all my duties. In addition to my
-            development work, I am the co-founder of CodeBridge School and
-            VistaWave, where I have demonstrated my leadership and innovative
-            capabilities. Looking ahead, I am excited about the prospect of
-            establishing my own company and expanding it with a dedicated team
-            of employees.
+            I bring over a year of experience in leveraging JavaScript,
+            React.js, and Next.js to create exceptional products for customers.
+            My expertise includes working collaboratively on GitHub, ensuring
+            seamless team integration and responsibility for all my duties. In
+            addition to my work experience, I am the co-founder of CodeBridge
+            School and VistaWave, where I have demonstrated my leadership and
+            innovative capabilities.
           </p>
           <a
             href="tel:+998970130322"
