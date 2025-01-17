@@ -12,7 +12,7 @@ import { Context } from "../../Context/ModalContext";
 // ------> Pdf
 import Resume from "../../Assets/pdf/resume.pdf";
 
-import Me from "../../Assets/Images/me.png";
+import Me from "../../Assets/Images/me.webp";
 
 function Header() {
   const [showModal, setShowModal] = useState(false);

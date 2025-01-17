@@ -3,7 +3,7 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 import AOS from "aos";
 
 // ------> Images
-import Me from "../../Assets/Images/dev.png";
+import Me from "../../Assets/Images/dev.webp";
 
 // ------> Css
 import "./hero.css";

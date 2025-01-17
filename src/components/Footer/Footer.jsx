@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiGitlab } from "react-icons/fi";
 
 // ------> Images
-import Me from "../../Assets/Images/me.png";
+import Me from "../../Assets/Images/me.webp";
 
 function Footer() {
   return (

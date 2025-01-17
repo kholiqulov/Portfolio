@@ -6,15 +6,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay } from "swiper";
 
 // ------> Images
-import Powermate from "../../Assets/Images/powermate.png";
-import VistaWave from "../../Assets/Images/vistawave.png";
-import Optimum from "../../Assets/Images/optimum.png";
-import Product from "../../Assets/Images/product.png";
-import IApply from "../../Assets/Images/IApply.png";
-import Rental from "../../Assets/Images/rental.png";
-import Coffeeroaster from "../../Assets/Images/Coffeeroaster.png";
-import Intex from "../../Assets/Images/intex.png";
-import Bito from "../../Assets/Images/bito.png";
+import Powermate from "../../Assets/Images/powermate.webp";
+import VistaWave from "../../Assets/Images/vistawave.webp";
+import Optimum from "../../Assets/Images/optimum.webp";
+import Product from "../../Assets/Images/product.webp";
+import IApply from "../../Assets/Images/IApply.webp";
+import Rental from "../../Assets/Images/rental.webp";
+import Coffeeroaster from "../../Assets/Images/Coffeeroaster.webp";
+import Intex from "../../Assets/Images/intex.webp";
+import Bito from "../../Assets/Images/bito.webp";
 
 // ------> Import Swiper styles
 import "swiper/css";
